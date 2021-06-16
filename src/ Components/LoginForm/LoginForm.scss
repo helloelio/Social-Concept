@@ -1,0 +1,87 @@
+.main__content-withoutbg {
+    position: absolute;
+    color: white;
+    max-width: 1125px;
+    width: 100%;
+}
+
+.form__block {
+    background-color: #3e4651;
+    width: 500px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 1em;
+        margin-bottom: 20px;
+        color: dodgerblue;
+    }
+
+    input:focus {
+        font-family: 'JetBrains Mono', monospace;
+        outline: none;
+        border-bottom: 2px solid dodgerblue;
+    }
+
+    input::-webkit-input-placeholder {
+        color: silver;
+    }
+
+    input::-moz-placeholder {
+        color: silver;
+    }
+
+    input:-ms-input-placeholder {
+        color: silver;
+    }
+
+    input::-ms-input-placeholder {
+        color: silver;
+    }
+
+    input::placeholder {
+        color: silver;
+    }
+}
+
+input[type='login'] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid silver;
+    width: 100%;
+}
+
+input[type='password'] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid silver;
+    width: 100%;
+}
+
+input[type='submit'] {
+    color: white;
+    background: dodgerblue;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: #4dabff;
+}

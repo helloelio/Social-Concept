@@ -1,0 +1,95 @@
+.header__items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 300px;
+}
+
+.header {
+    background-color: #373d47;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+
+    &__logo {
+        padding: 0 10px 0;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__search {
+        input {
+            width: 100%;
+            border-radius: 5px;
+            background: inherit;
+            color: white;
+            border: 2px solid dodgerblue;
+            transition: padding 0.3s ease;
+            padding: 5px 0 5px 0;
+        }
+
+        input:focus {
+            outline: none;
+            border-left: 2px solid dodgerblue;
+            border-top: 2px solid dodgerblue;
+            border-right: 2px solid dodgerblue;
+            padding: 5px 80px 5px 0;
+        }
+
+        input::-webkit-input-placeholder {
+            color: white;
+            padding: 10px;
+        }
+
+        input::-moz-placeholder {
+            color: white;
+            padding: 10px;
+        }
+
+        input:-ms-input-placeholder {
+            color: white;
+            padding: 10px;
+        }
+
+        input::-ms-input-placeholder {
+            color: white;
+            padding: 10px;
+        }
+
+        input::placeholder {
+            color: white;
+            padding: 10px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .profile-btn {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: dodgerblue;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 5px 15px;
+            width: 85px;
+            height: 30px;
+            border-radius: 8px;
+            img {
+                color: white;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

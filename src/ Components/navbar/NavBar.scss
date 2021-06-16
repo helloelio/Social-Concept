@@ -1,0 +1,85 @@
+.nav {
+    position: fixed;
+    top: 50px;
+    background-color: #282c34;
+    width: 200px;
+    height: 100%;
+
+    &__list {
+        list-style: none;
+        text-align: left;
+    }
+
+    &__item {
+        color: beige;
+
+        a {
+            position: relative;
+            display: block;
+            font-size: 1.5em;
+            padding: 15px 45px;
+            color: beige;
+            text-decoration: none;
+        }
+
+        .profile::before {
+            content: '+';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .friends::before {
+            content: '#';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .messages::before {
+            content: '@';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .news::before {
+            content: '-';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .music::before {
+            content: '&';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .settings::before {
+            content: '*';
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__item:hover {
+        background-color: #3e4651;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+.active__navLink {
+    background-color: dodgerblue;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}

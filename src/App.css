@@ -1,0 +1,22 @@
+.App {
+    max-width: 1440px;
+}
+
+.main {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    background-color: #282c34;
+    margin: 20px 0 20px 100px;
+    color: white;
+    max-width: 1125px;
+    width: 100%;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+}

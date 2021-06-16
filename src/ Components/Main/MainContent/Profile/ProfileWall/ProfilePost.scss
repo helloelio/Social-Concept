@@ -1,0 +1,74 @@
+.profile__post {
+    margin-top: 20px;
+    border: 2px solid dodgerblue;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.wall__block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.post__block {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.post__item {
+    background-color: #3e4651;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.post__header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post__title {
+    margin-left: 20px;
+}
+
+.post__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.post__content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.post__image {
+    text-align: center;
+
+    img {
+        width: 50%;
+        max-height: 1000px;
+    }
+}
+
+.profile__like {
+    border: none;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.profile__like-isActive {
+    background-color: red;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
